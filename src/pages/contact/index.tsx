@@ -1,12 +1,15 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import React from "react";
 
-export default function Home() {
+function Contact() {
   return (
-    <div className="font-monst">
+    <div>
       <Header />
-      <div className="h-[80vh]"></div>
+      <div>Contact</div>
       <Footer />
     </div>
   );
 }
+
+export default Contact;
