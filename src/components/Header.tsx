@@ -3,9 +3,9 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="bg-slate-100 px-10 py-4 flex justify-between items-center ">
-      <h2 className="font-semibold text-2xl">EduWeb</h2>
-      <ul className="flex justify-between  gap-3 text-sm ml-7  ">
+    <header className=" px-10 py-5 flex items-center b">
+      <h2 className="font-semibold text-2xl flex-1">EduWeb</h2>
+      <ul className="flex justify-between  gap-3 text-sm">
         <li>
           <Link href="/" className="hover:text-slate-400">
             Home
@@ -32,7 +32,7 @@ function Header() {
           </Link>
         </li>
       </ul>
-      <div className="flex gap-2">
+      <div className="flex gap-2 flex-1 justify-end">
         <input
           type="text"
           placeholder="Search course"
