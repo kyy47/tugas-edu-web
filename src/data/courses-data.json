@@ -1,0 +1,89 @@
+[
+  {
+    "category_id": 1,
+    "category_name": "Programming",
+    "courses": [
+      {
+        "course_id": 101,
+        "course_name": "Introduction to Python Programming",
+        "instructor": "John Smith",
+        "duration": "8 weeks",
+        "price": "$99.99",
+        "description": "Learn the fundamentals of Python programming, including syntax, data types, and basic algorithms.",
+        "start_date": "2023-10-15",
+        "enrollment_deadline": "2023-10-10",
+        "requirements": [
+          "Basic knowledge of computer usage",
+          "No prior programming experience required"
+        ]
+      },
+      {
+        "course_id": 102,
+        "course_name": "Web Development with JavaScript",
+        "instructor": "Sarah Johnson",
+        "duration": "10 weeks",
+        "price": "$129.99",
+        "description": "Master web development using JavaScript, including HTML, CSS, and modern frameworks like React.",
+        "start_date": "2023-11-01",
+        "enrollment_deadline": "2023-10-25",
+        "requirements": ["Basic understanding of HTML and CSS"]
+      }
+    ]
+  },
+  {
+    "category_id": 2,
+    "category_name": "Science",
+    "courses": [
+      {
+        "course_id": 201,
+        "course_name": "Physics Fundamentals",
+        "instructor": "Dr. Robert Turner",
+        "duration": "6 weeks",
+        "price": "$79.99",
+        "description": "Explore the fundamental principles of physics, including mechanics, electricity, and optics.",
+        "start_date": "2023-09-30",
+        "enrollment_deadline": "2023-09-25",
+        "requirements": ["High school-level mathematics"]
+      },
+      {
+        "course_id": 202,
+        "course_name": "Biology Basics",
+        "instructor": "Dr. Emily Rodriguez",
+        "duration": "7 weeks",
+        "price": "$89.99",
+        "description": "Discover the basics of biology, covering topics such as cells, genetics, and ecosystems.",
+        "start_date": "2023-10-10",
+        "enrollment_deadline": "2023-10-05",
+        "requirements": ["No prior biology knowledge required"]
+      }
+    ]
+  },
+  {
+    "category_id": 3,
+    "category_name": "Digital Marketing",
+    "courses": [
+      {
+        "course_id": 301,
+        "course_name": "Social Media Marketing Strategies",
+        "instructor": "Mark Anderson",
+        "duration": "9 weeks",
+        "price": "$109.99",
+        "description": "Learn effective social media marketing strategies to promote businesses and engage with audiences.",
+        "start_date": "2023-10-20",
+        "enrollment_deadline": "2023-10-15",
+        "requirements": ["Basic understanding of social media platforms"]
+      },
+      {
+        "course_id": 302,
+        "course_name": "Search Engine Optimization (SEO)",
+        "instructor": "Laura Davis",
+        "duration": "8 weeks",
+        "price": "$99.99",
+        "description": "Optimize websites for search engines and improve their visibility in search results.",
+        "start_date": "2023-11-05",
+        "enrollment_deadline": "2023-10-30",
+        "requirements": ["Basic knowledge of website development"]
+      }
+    ]
+  }
+]

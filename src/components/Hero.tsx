@@ -1,12 +1,12 @@
 import React from "react";
-import { Button } from "./ui/ui/button";
+import { Button } from "./ui/button";
 function Hero() {
   return (
     <section className="relative">
       <img
         src="course-hero.jpg"
         alt=""
-        className="w-full h-[95vh] object-cover"
+        className="w-full h-[92vh] object-cover"
       />
       <div className="text-slate-100 absolute top-0 left-0 px-10 w-[100%] h-full flex flex-col justify-center">
         <h2 className=" font-semibold text-4xl max-w-md">
