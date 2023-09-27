@@ -20,7 +20,9 @@ function Hero() {
           <Button variant="default" className="bg-stone-400">
             Explore
           </Button>
-          <Button variant="outline">Learn More</Button>
+          <Button variant="outline" className="bg-transparent">
+            Learn More
+          </Button>
         </div>
       </div>
     </section>
