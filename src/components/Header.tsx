@@ -5,17 +5,19 @@ import { Button } from "./ui/button";
 
 function Header() {
   return (
-    <header className=" px-10 h-[8vh] flex items-center b">
-      <h2 className="font-semibold text-2xl flex-1">EduWeb</h2>
+    <header className=" px-10 h-[8vh] flex items-center ">
+      <Link href={"/"} className="flex-1">
+        <h2 className="font-semibold text-2xl ">EduWeb</h2>
+      </Link>
       <ul className="flex justify-between  text-sm">
         <Button variant="link">
           <Link href="/">Home</Link>
         </Button>
         <Button variant="link">
-          <Link href="#courses">Courses</Link>
+          <Link href="/#courses">Courses</Link>
         </Button>
         <Button variant="link">
-          <Link href="/blog">Blog</Link>
+          <Link href="/#blog">Blog</Link>
         </Button>
         <Button variant="link">
           <Link href="/about">About Us</Link>

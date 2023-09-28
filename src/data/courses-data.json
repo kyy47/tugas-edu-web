@@ -12,6 +12,7 @@
         "description": "Learn the fundamentals of Python programming, including syntax, data types, and basic algorithms.",
         "start_date": "2023-10-15",
         "enrollment_deadline": "2023-10-10",
+        "imgUrl": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3132&q=80",
         "requirements": [
           "Basic knowledge of computer usage",
           "No prior programming experience required"
@@ -25,8 +26,21 @@
         "price": "$129.99",
         "description": "Master web development using JavaScript, including HTML, CSS, and modern frameworks like React.",
         "start_date": "2023-11-01",
+        "imgUrl": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60",
         "enrollment_deadline": "2023-10-25",
         "requirements": ["Basic understanding of HTML and CSS"]
+      },
+      {
+        "course_id": 103,
+        "course_name": "Backend Development with Express Js",
+        "instructor": "Muhammad Ilham",
+        "duration": "8 weeks",
+        "price": "$129.99",
+        "description": "Master Backend development using Express, including how to develop backend with frameworks like Express.",
+        "start_date": "2023-10-01",
+        "enrollment_deadline": "2023-09-27",
+        "imgUrl": "https://plus.unsplash.com/premium_photo-1683140655656-20448abc55da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60",
+        "requirements": ["understanding of Javasript and concept of REST API"]
       }
     ]
   },
@@ -40,6 +54,7 @@
         "instructor": "Dr. Robert Turner",
         "duration": "6 weeks",
         "price": "$79.99",
+        "imgUrl": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGh5c2ljfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
         "description": "Explore the fundamental principles of physics, including mechanics, electricity, and optics.",
         "start_date": "2023-09-30",
         "enrollment_deadline": "2023-09-25",
@@ -52,6 +67,7 @@
         "duration": "7 weeks",
         "price": "$89.99",
         "description": "Discover the basics of biology, covering topics such as cells, genetics, and ecosystems.",
+        "imgUrl": "https://plus.unsplash.com/premium_photo-1664474798000-1e085e752710?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmlvbG9neXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
         "start_date": "2023-10-10",
         "enrollment_deadline": "2023-10-05",
         "requirements": ["No prior biology knowledge required"]
@@ -70,6 +86,7 @@
         "price": "$109.99",
         "description": "Learn effective social media marketing strategies to promote businesses and engage with audiences.",
         "start_date": "2023-10-20",
+        "imgUrl": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFya2V0aW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
         "enrollment_deadline": "2023-10-15",
         "requirements": ["Basic understanding of social media platforms"]
       },
@@ -81,6 +98,7 @@
         "price": "$99.99",
         "description": "Optimize websites for search engines and improve their visibility in search results.",
         "start_date": "2023-11-05",
+        "imgUrl": "https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VhcmNoJTIwZW5naW5lfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
         "enrollment_deadline": "2023-10-30",
         "requirements": ["Basic knowledge of website development"]
       }

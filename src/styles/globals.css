@@ -76,3 +76,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+.task:hover {
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  border-color: rgba(162, 179, 207, 0.2) !important;
+  transform: scale(0.98);
+}
+
+.task {
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: all 0.3s;
+}
