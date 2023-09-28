@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 function Hero() {
   return (
     <section className="relative">
@@ -18,10 +19,10 @@ function Hero() {
         </p>
         <div className="flex gap-4 mt-2">
           <Button variant="default" className="bg-stone-400">
-            Explore
+            <Link href="/courses">Explore</Link>
           </Button>
           <Button variant="outline" className="bg-transparent">
-            Learn More
+            <Link href="/#blog">We Blog</Link>
           </Button>
         </div>
       </div>
