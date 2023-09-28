@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
 
-type CardCoursesProps = {
+export type CardCoursesProps = {
   course_id: number;
-  category: string;
+  category?: string;
   course_name: string;
   price: string;
   description: string;
