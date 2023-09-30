@@ -4,6 +4,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import jsonBlogData from "../../data/blog-data.json";
+import Image from "next/image";
 type BlogDataType = {
   post_id: number;
   title: string;
@@ -34,10 +35,15 @@ function Blog() {
           {blogData?.title}
         </h2>
         <div className="flex gap-3 items-center ">
-          <img
-            src={blogData?.authorImg}
-            className="w-8 h-8 object-cover rounded-full"
-          />
+          <div className="relative w-8 h-8">
+            <Image
+              src={blogData?.authorImg || "/flag.svg"}
+              fill
+              alt="img author"
+              sizes="100%"
+              className=" object-cover rounded-full"
+            />
+          </div>
           <p className="text-black font-semibold">
             John Smith{" "}
             <span className="text-slate-500">
@@ -47,11 +53,15 @@ function Blog() {
         </div>
         <div className="w-[60%] py-3 mt-4">
           <AspectRatio ratio={4 / 2.2} className="flex justify-center ">
-            <img
-              src={blogData?.imgUrl}
-              alt=""
-              className=" w-full rounded-xl overflow-hidden object-cover"
-            />
+            <div className="relative w-full ">
+              <Image
+                src={blogData?.imgUrl || "/flag.svg"}
+                alt="imgUrl"
+                fill
+                sizes="100%"
+                className=" rounded-xl overflow-hidden object-cover"
+              />
+            </div>
           </AspectRatio>
         </div>
         <div className="max-w-[700px] py-5 mb-6">

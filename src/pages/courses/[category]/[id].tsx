@@ -10,6 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Image from "next/image";
 type CourseDataType = {
   course_id: number;
   course_name: string;
@@ -45,11 +46,15 @@ function DetailCourse() {
         <h3 className="text-amber-600 font-bold text-xl">Detail Course</h3>
         <div className="flex gap-4 w-full max-w-4xl mt-6">
           <div>
-            <img
-              src={courseData?.imgUrl}
-              alt=""
-              className="w-full max-w-[340px] rounded-md overflow-hidden"
-            />
+            <div className="w-[340px] h-48 relative">
+              <Image
+                src={courseData?.imgUrl || "/flag.svg"}
+                alt=""
+                fill
+                sizes="100%"
+                className=" rounded-md overflow-hidden"
+              />
+            </div>
             <div className="flex justify-between mt-4 gap-4">
               <Button
                 variant="destructive"
@@ -72,35 +77,47 @@ function DetailCourse() {
               </h3>
               <div className="flex flex-col gap-1">
                 <div className="flex gap-2">
-                  <img src="/online.svg" alt="online" className="w-4" />
+                  <div className="relative w-4">
+                    <Image src="/online.svg" fill alt="online" />
+                  </div>
                   <p className="text-slate-700 text-sm font-light">Online</p>
                 </div>
                 <div className="flex gap-2">
-                  <img src="/clock.svg" alt="clock" className="w-4" />
+                  <div className="relative w-4">
+                    <Image src="/clock.svg" fill alt="online" sizes="100%" />
+                  </div>
                   <p className="text-slate-700 text-sm font-light">
                     {courseData?.duration}
                   </p>
                 </div>
                 <div className="flex gap-2">
-                  <img src="/flag.svg" alt="flag" className="w-4" />
+                  <div className="relative w-4">
+                    <Image src="/flag.svg" fill alt="online" sizes="100%" />
+                  </div>
                   <p className="text-slate-700 text-sm font-light">English</p>
                 </div>
               </div>
-              <div className="h-max bg-slate-50 flex flex-col gap-1">
+              <div className="h-max  flex flex-col gap-1">
                 <div className="flex gap-2">
-                  <img src="/person.svg" alt="online" className="w-4" />
+                  <div className="relative w-4">
+                    <Image src="/person.svg" fill alt="online" sizes="100%" />
+                  </div>
                   <p className="text-slate-700 text-sm font-light">
                     With {courseData?.instructor}
                   </p>
                 </div>
                 <div className="flex gap-2">
-                  <img src="/clock.svg" alt="clock" className="w-4" />
+                  <div className="relative w-4">
+                    <Image src="/clock.svg" fill alt="online" sizes="100%" />
+                  </div>
                   <p className="text-slate-700 text-sm font-light">
                     enrollment deadline {courseData?.enrollment_deadline}
                   </p>
                 </div>
                 <div className="flex gap-2">
-                  <img src="/clock.svg" alt="clock" className="w-4" />
+                  <div className="relative w-4">
+                    <Image src="/clock.svg" fill alt="online" sizes="100%" />
+                  </div>
                   <p className="text-slate-700 text-sm font-light">
                     start date in {courseData?.start_date}
                   </p>
@@ -117,8 +134,8 @@ function DetailCourse() {
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger>Requirements</AccordionTrigger>
-              {courseData?.requirements.map((requirement) => (
-                <AccordionContent>- {requirement}</AccordionContent>
+              {courseData?.requirements.map((requirement, index) => (
+                <AccordionContent key={index}>- {requirement}</AccordionContent>
               ))}
             </AccordionItem>
           </Accordion>

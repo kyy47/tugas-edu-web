@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type CardBlogProps = {
@@ -23,10 +24,12 @@ function CardBlog({
       className="flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5   "
       href={`/blog/${post_id}`}
     >
-      <div className="w-full h-52 overflow-hidden rounded-xl bg-red-400">
-        <img
-          className="w-full object-cover rounded-xl"
+      <div className="w-full h-52 overflow-hidden rounded-xl bg-red-400 relative">
+        <Image
+          className=" object-cover rounded-xl"
           src={imgUrl}
+          fill
+          sizes="100%"
           alt="Image Description"
         />
       </div>
@@ -35,11 +38,15 @@ function CardBlog({
         <p className="mt-5 text-gray-600 line-clamp-4">{content}</p>
       </div>
       <div className="mt-auto flex items-center gap-x-3">
-        <img
-          className="w-8 h-8 rounded-full"
-          src={authorImg}
-          alt="Image Description"
-        />
+        <div className="relative w-8 h-8">
+          <Image
+            className=" rounded-full"
+            src={authorImg}
+            fill
+            sizes="100%"
+            alt="Image Description"
+          />
+        </div>
         <div>
           <h5 className="text-sm text-gray-800 ">{author}</h5>
         </div>

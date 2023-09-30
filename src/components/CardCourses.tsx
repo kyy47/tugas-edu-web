@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -22,11 +23,15 @@ function CardCourses({
   return (
     <div className="border  p-1 cursor-pointer task">
       <Link href={`courses/${category}/${course_id}`}>
-        <img
-          src={imgUrl}
-          alt="img"
-          className="w-full object-cover h-[200px] rounded-[5px]"
-        />
+        <div className="relative w-full h-[200px]">
+          <Image
+            src={imgUrl}
+            alt="img"
+            fill
+            sizes="100%"
+            className=" object-cover  rounded-[5px]"
+          />
+        </div>
         <div className="px-2">
           <h3 className="mt-4 text-sm font-normal">{category}</h3>
           <h2 className="mt-5 font-semibold text-xl">{course_name}</h2>

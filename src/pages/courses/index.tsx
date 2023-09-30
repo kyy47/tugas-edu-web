@@ -11,6 +11,7 @@ function Courses() {
         <h3 className="text-amber-600 font-bold text-xl">Courses</h3>
         {courseData.map((courses) => (
           <ListCourses
+            key={courses.category_id}
             list_courses={courses}
             title={courses.category_name}
             isButtonAllShow={false}
