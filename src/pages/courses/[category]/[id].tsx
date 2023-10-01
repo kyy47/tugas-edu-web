@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
+
 type CourseDataType = {
   course_id: number;
   course_name: string;

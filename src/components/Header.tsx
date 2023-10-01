@@ -16,16 +16,16 @@ function Header() {
           <Link href="/">Home</Link>
         </Button>
         <Button variant="link">
-          <Link href="/#courses">Courses</Link>
+          <Link href="/courses">Courses</Link>
         </Button>
         <Button variant="link">
-          <Link href="/#blog">Blog</Link>
+          <Link href="/blog">Blog</Link>
         </Button>
         <Button variant="link">
-          <Link href="/#about-us">About Us</Link>
+          <Link href="/about">About Us</Link>
         </Button>
         <Button variant="link">
-          <Link href="/#contact-us">Contact Us</Link>
+          <Link href="/contact">Contact Us</Link>
         </Button>
       </ul>
       <div className="flex gap-2 flex-1 justify-end hidden md:flex">
