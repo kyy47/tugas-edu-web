@@ -1,13 +1,13 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import HeaderFooter from "@/components/HeaderFooter";
 import React from "react";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
 
 function About() {
   return (
-    <div>
-      <Header />
+    <HeaderFooter>
       <section className=" md:p-10 mt-6 md:mt-0" id="about-us">
         <div className="relative flex flex-col justify-center">
           <h2 className="text-3xl font-semibold">About Us</h2>
@@ -56,8 +56,7 @@ function About() {
           </div>
         </div>
       </section>
-      <Footer />
-    </div>
+    </HeaderFooter>
   );
 }
 
