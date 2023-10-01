@@ -9,7 +9,7 @@ function Blog() {
         <h2 className="text-3xl font-semibold">Blog</h2>
         <p className="py-5 text-sm">Explore we blog in our platform</p>
       </div>
-      <div className="grid grid-cols-3  gap-11">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-11">
         {blogData.map((item) => (
           <CardBlog
             key={item.post_id}

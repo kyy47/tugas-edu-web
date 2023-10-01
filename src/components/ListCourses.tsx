@@ -20,19 +20,22 @@ function ListCourses({
   isButtonAllShow = true,
 }: ListCoursesProps) {
   return (
-    <section className="p-10" id="courses">
+    <section className="md:p-10 mt-6 md:mt-0" id="courses">
       <div className="relative flex flex-col justify-center">
         <h2 className="text-3xl font-semibold">{title}</h2>
         <p className="py-5 text-sm">
           Explore a wide range of course available on our platform.
         </p>
         {isButtonAllShow && (
-          <Button variant="outline" className="absolute top-3 right-4">
+          <Button
+            variant="outline"
+            className="absolute top-0 right-0 md:top-3 md:right-4"
+          >
             <Link href="/courses">View All</Link>
           </Button>
         )}
       </div>
-      <div className="grid grid-cols-3  gap-11">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-11">
         {list_courses.courses.map((course) => (
           <CardCourses
             course_id={course.course_id}

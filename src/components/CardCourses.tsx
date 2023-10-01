@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export type CardCoursesProps = {
   course_id: number;
@@ -20,8 +20,17 @@ function CardCourses({
   imgUrl,
   course_id,
 }: CardCoursesProps) {
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 600);
+  }, []);
   return (
-    <div className="border  p-1 cursor-pointer task">
+    <div
+      className={`${isLoading && "blur-sm"} border  p-1 cursor-pointer task`}
+    >
       <Link href={`courses/${category}/${course_id}`}>
         <div className="relative w-full h-[200px]">
           <Image

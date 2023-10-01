@@ -1,15 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import React from "react";
-
-function Contact() {
-  return (
-    <div>
-      <Header />
-      <div>Contact</div>
-      <Footer />
-    </div>
-  );
-}
-
-export default Contact;

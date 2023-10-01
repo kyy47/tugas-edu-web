@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 type CardBlogProps = {
   post_id: number;
@@ -10,6 +11,7 @@ type CardBlogProps = {
   imgUrl: string;
   authorImg: string;
 };
+
 function CardBlog({
   title,
   content,
@@ -19,9 +21,18 @@ function CardBlog({
   imgUrl,
   authorImg,
 }: CardBlogProps) {
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   return (
     <Link
-      className="flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5   "
+      className={`flex ${
+        isLoading ? "blur-sm" : ""
+      } flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl py-5 px-0 md:px-5 `}
       href={`/blog/${post_id}`}
     >
       <div className="w-full h-52 overflow-hidden rounded-xl bg-red-400 relative">
